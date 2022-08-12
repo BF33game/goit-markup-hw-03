@@ -1,0 +1,216 @@
+:root{
+    --primery-text-color: #757575;
+    --secondary-text-color:#212121;
+    --accent-text-color:#2196F3;
+    --white-color:#FFFFFF;
+    --background-color:#2F303A;
+    --background-color-button:#F5F4FA;
+}
+/*Обнуление*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+body{
+    color: var(--primery-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/*Логотип*/
+.logo{
+    color:var(--accent-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo-top{
+    color: #000000;
+}
+/*Навигация сайта*/
+.site-nav .link{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-text-color);
+}
+.link.current{
+    color: var(--accent-text-color);
+}
+/*Ссылки навигации*/
+.auth-nav .link-nav{
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.auth-nav .link-nav:hover,
+.auth-nav .link-nav:focus{
+    color: var(--accent-text-color);
+}
+/*Герой*/
+.section-hero{
+    background-color: var(--background-color);
+}
+.hero{
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/*Кнопка*/
+.button{
+    color: var(--white-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-text-color);
+    padding: 10px 32px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.button:hover,
+.button:focus{
+    color: var(--secondary-text-color);
+    background-color: var(--background-color-button);
+}
+/*Список переваг*/
+.benefits-list{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.benefits-text{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/*2 названия секций:Наша команда и Чем мы заимаемся*/
+.section-title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*Наша команда*/
+.team-name{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.team-work{
+    font-size: 16px;
+    line-height: 1.18;
+}
+/*Футер*/
+.footer{
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/*Нижний спан*/
+.logo .logo-bottom{
+    color: var(--white-color);
+}
+.bottom{
+    font-size: 14px;
+    line-height: 1.17;
+    font-style: normal;
+}
+.bottom-adress{
+        color: var(--white-color);
+        text-decoration: none;
+        margin-bottom: 9px;
+        display: inline-block;
+}
+.bottom-nav{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+}
+.bottom-adress:hover,
+.bottom-nav:hover,
+.bottom-adress:focus,
+.bottom-nav:focus
+{
+    color: var(--accent-text-color);
+}
+/*Фильр кнопок Портфоио*/
+.portfolio-button{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--secondary-text-color);
+    background-color:var(--background-color-button);
+}
+.portfolio-button:hover,
+.portfolio-button:focus{
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+}
+/*Стили меина для Портфолио*/
+.portfolio-name{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+/*Не применяется стиль не могу понять почему*/
+.portfolio-subname{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
