@@ -25,10 +25,11 @@ ul{
 button{
     cursor: pointer;
 }
+
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
@@ -43,7 +44,12 @@ body{
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-
+/*Флекс контейнер в хедере*/
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*Логотип*/
 .logo{
     color:var(--accent-text-color);
@@ -57,6 +63,13 @@ body{
     color: #000000;
 }
 /*Навигация сайта*/
+.site-nav{
+    display: flex;
+} 
+/*Лишки*/
+.site-nav__item:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -64,6 +77,8 @@ body{
     line-height: 1.4;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: block;
+    padding: 32px 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -73,6 +88,13 @@ body{
     color: var(--accent-text-color);
 }
 /*Ссылки навигации*/
+.auth-nav{
+    display: flex;
+}
+/*Лишки в адресе хедера*/
+.auth-nav__item:last-child{
+    margin-left: 50px;
+}
 .auth-nav .link-nav{
     color: var(--primery-text-color);
     font-weight: 500;
@@ -87,14 +109,18 @@ body{
 }
 /*Герой*/
 .section-hero{
+    padding: 200px 0;
     background-color: var(--background-color);
+    text-align: center;
 }
 .hero{
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -119,7 +145,14 @@ body{
     background-color: var(--background-color-button);
 }
 /*Список переваг*/
+.benefits{
+    display: flex;
+    justify-content: space-between;
+}
 .benefits-list{
+    max-width: 270px;
+}
+.benefits-title{
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -141,21 +174,43 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+/*Сецкия фото*/
 .foto{
     padding-top: 0px;
 }
+.foto-list{
+    display: flex;
+    justify-content: space-between;
+}
 /*Наша команда*/
+.team-image{
+    display: block;
+}
+.team{
+    background-color: #F5F4FA;
+    text-align: center;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+.team-cards{
+   background-color: var(--white-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
 .team-name{
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
 }
 .team-work{
     font-size: 16px;
     line-height: 1.18;
+    padding-bottom: 30px;
 }
 /*Футер*/
 .footer{
@@ -182,6 +237,7 @@ body{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+/*Отступ адреса и емайла в футере*/
 .bottom-list:not(:last-child)
 {
 margin-bottom: 9px;
