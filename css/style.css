@@ -51,7 +51,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 /*Логотип*/
 .logo{
@@ -254,6 +253,10 @@ margin-bottom: 9px;
     color: var(--accent-text-color);
 }
 /*Фильр кнопок Портфоио*/
+.header-border{
+    border-bottom: 1px solid #ECECEC;
+    
+}
 .portfolio-item{
     display: flex;
     justify-content: center;
