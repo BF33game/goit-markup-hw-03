@@ -82,8 +82,6 @@ body{
 /*Навигация сайта*/
 .site-nav{
     display: flex;
-} 
-.site-nav{
     margin-left: 93px;
 }
 .site-nav__item + .site-nav__item{
